@@ -1,0 +1,10 @@
+@startuml
+frame "Systeme ENU" {
+  [RabbitMQ] -right-> [enu-mediation] : redirige
+  [enu-mediation] -right-> [enu-backend] : alimente en donnees
+  [enu-frontend] -down-> [enu-backend] : extrait les donnees
+}
+[enu-backend] --> [GED] : stocke des documents
+[SI client 1] -up-> [RabbitMQ] : produit message
+[SI client 2] -up-> [RabbitMQ] : produit message
+@enduml
