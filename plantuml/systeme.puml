@@ -5,6 +5,7 @@ frame "Systeme ENU" {
   [enu-frontend] -down-> [enu-backend] : extrait les donnees
 }
 [enu-backend] --> [GED] : stocke des documents
-[SI client 1] -up-> [RabbitMQ] : produit message
-[SI client 2] -up-> [RabbitMQ] : produit message
+[enu-backend] --> [VLDAP] : obtient les donnees de l'usager
+[SI metier 1] -up-> [RabbitMQ] : produit message
+[SI metier 2] -up-> [RabbitMQ] : produit message
 @enduml
