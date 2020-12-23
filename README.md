@@ -17,7 +17,7 @@ Les principales fonctionnalités du système sont :
 
 On notera que l'Espace numérique ne contient aucune fonctionnalité de création de démarche - par exemple via
 une saisie dans un formulaire. Toutes les démarches sont créées extérieurement, dans les divers systèmes des
-offices de l'État, et simplement agrégées dans l'Espace numérique de l'usager.
+offices de l'État ; l'Espace numérique de l'usager ne fait que les agréger.
 
 La copie d'écran suivante donne un aperçu de la page d'accueil de l'usager :
 ![](./images/enu-frontend.png)
@@ -28,12 +28,12 @@ La copie d'écran suivante donne un aperçu de la page d'accueil de l'usager :
 
 Le système se compose de 4 composants principaux, résumés dans le tableau suivant :
 
-| Composant | Responsabilités | Technologies | 
-| --------- |:--------------- | ------------ |
-| enu-frontend | interface homme-machine | HTML 5, React, JavaScript, WebSocket | 
-| enu-backend | stockage des données et accès via REST | Java, Spring, PostgreSQL |
-| enu-mediation | transformation et routage des messages | Java, Apache Camel |
-| RabbitMQ | middleware de messagerie | Apache RabbitMQ | 
+| Composant | Responsabilités | Technologies | Maintenu par |
+| --------- |:--------------- | ------------ | ------------ |
+| enu-frontend | interface homme-machine | HTML 5, React, JavaScript, WebSocket | Jway |
+| enu-backend | stockage des données et accès via REST | Java, Spring, PostgreSQL | Jway |
+| enu-mediation | transformation et routage des messages | Java, Apache Camel | État de Genève |
+| RabbitMQ | middleware de messagerie | Apache RabbitMQ | Pivotal Software |
 
 Le diagramme ci-dessus est en réalité simplifié : si le SI client est principalement producteur de messages et
 enu-mediation, principalement consommateur, pour certaines données le trafic s'opère dans l'autre sens.
