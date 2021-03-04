@@ -1,5 +1,14 @@
+MODIFICATION D'UN FICHIER
+
+Par exemple, dans IntelliJ, installer le plugin PlantUML et ouvrir le fichier .puml ;
+la version image s'affiche à côté.
+
+
+PUBLICATION DE L'IMAGE
+
 Après une modification dans le fichier .puml, taper la commande
 
-$JAVA_HOME/bin/java -jar lib/plantuml.1.2020.22.jar systeme.puml
+$JAVA_HOME/bin/java -jar lib/plantuml.1.2020.22.jar enu-technique.puml
 
-depuis ce répertoire-ci. Ceci re-génère le fichier diag.png.
+depuis ce répertoire-ci. Ceci re-génère le fichier diag.png. Le déplacer ensuite dans le
+répertoire images.
