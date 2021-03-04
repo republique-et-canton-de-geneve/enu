@@ -20,11 +20,12 @@ une saisie dans un formulaire. Toutes les démarches sont créées extérieureme
 offices de l'État ; l'Espace numérique de l'usager ne fait que les agréger.
 
 La copie d'écran suivante donne un aperçu de la page d'accueil de l'usager :
+
 ![](./images/enu-frontend.png)
 
 ## Présentation technique
 
-![](./plantuml/systeme.png)
+![](./images/enu-technique.png)
 
 Le système se compose de 4 composants principaux, résumés dans le tableau suivant :
 
