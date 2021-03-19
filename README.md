@@ -34,7 +34,7 @@ Le système se compose de 4 composants principaux, résumés dans le tableau sui
 | enu-frontend | interface homme-machine | HTML 5, React, JavaScript, WebSocket | Jway |
 | enu-backend | stockage des données et accès via REST | Java, Spring, PostgreSQL | Jway |
 | enu-mediation | transformation et routage des messages | Java, Apache Camel | État de Genève |
-| RabbitMQ | middleware de messagerie | Apache RabbitMQ | Pivotal Software |
+| RabbitMQ | middleware de messagerie | RabbitMQ | VMWare Tanzu |
 
 Le diagramme ci-dessus est en réalité simplifié : si le SI client est principalement producteur de messages et
 enu-mediation, principalement consommateur, pour certaines données le trafic s'opère dans l'autre sens.
@@ -90,7 +90,7 @@ métier doit en être averti.
 
 ### d) RabbitMQ
 
-[Apache RabbitMQ](https://www.rabbitmq.com) est une mise en oeuvre reconnue et open source du protocole de
+[RabbitMQ](https://www.rabbitmq.com) est une mise en oeuvre reconnue et open source du protocole de
 messagerie [AMQP](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol).
 
 L'application Espace numérique utilise RabbitMQ en y définissant des queues et des "Exchanges".
