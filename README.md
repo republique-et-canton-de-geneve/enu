@@ -19,9 +19,50 @@ On notera que l'Espace numérique ne contient aucune fonctionnalité de créatio
 une saisie dans un formulaire. Toutes les démarches sont créées extérieurement, dans les divers systèmes des
 offices de l'État ; l'Espace numérique de l'usager ne fait que les agréger.
 
-La copie d'écran suivante donne un aperçu de la page d'accueil de l'usager :
+Voici la page d'accueil de l'usager :
 
-![](./images/enu-frontend.png)
+![](./images/enu-accueil.jpg)
+
+Si l'usager clique sur &#x00AB;&#x00A0;Mes démarches&#x00A0;&#x00BB;, la page suivante s'ouvre :
+
+![](./images/enu-demarches.jpg)
+
+Cette page présente les tâches attendues de l'usager, ses démarches en cours et ses démarches
+achevées. 
+Cliquer sur la loupe d'une ligne d'une démarche donne le détail de la démarche :
+
+![](./images/enu-demarche-detail.jpg)
+
+Une démarche peut passer par trois états successifs :
+&#x00AB;&#x00A0;déposée&#x00A0;&#x00BB;,
+&#x00AB;&#x00A0;en traitement&#x00A0;&#x00BB; et
+&#x00AB;&#x00A0;terminée&#x00A0;&#x00BB;.
+
+La seconde principale fonctionnalité, après &#x00AB;&#x00A0;Mes démarches&#x00A0;&#x00BB;, est
+&#x00AB;&#x00A0;Mes documents&#x00A0;&#x00BB; :
+
+![](./images/enu-documents.jpg)
+
+Cet écran reprend la liste des documents envoyés à l'usager par l'administration.
+Un document peut être un récapitulatif d'une démarche
+(par exemple, le document &#x00AB;&#x00A0;Accusé de réception&#x00A0;&#x00BB;),
+ou bien un élément d'une lettre adressée à l'usager ; par exemple, la lettre du 09.04.2021
+contient trois documents portant sur une démarche de changement d'adresse.
+
+Les documents liés à une démarche sont également présents dans l'écran de détail de la démarche.
+
+Une autre fonctionnalité est
+&#x00AB;&#x00A0;Mon profil&#x00A0;&#x00BB; :
+
+![](./images/enu-profil.jpg)
+
+Dans celle-ci, l'usager peut notamment préciser ses préférences lors de ses interactions avec l'administration :
+choix des notifications (par courriel ou par SMS), choix des événements justifiant une notification
+(nouvelle tâche à réaliser, confirmation du dépôt d'une démarche, etc.).
+
+La fonctionnalité
+&#x00AB;&#x00A0;Ma situation&#x00A0;&#x00BB;,
+non encore développée, présentera à l'usager sa situation vis-à-vis de l'administration fiscale. 
 
 ## Présentation technique
 
