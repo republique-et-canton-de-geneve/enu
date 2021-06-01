@@ -74,7 +74,7 @@ Le système se compose de 4 composants principaux, résumés dans le tableau sui
 | --------- |:--------------- | ------------ | ------------ |
 | enu-frontend | interface homme-machine | HTML 5, React, JavaScript, WebSocket | Jway |
 | enu-backend | stockage des données et accès via REST | Java, Spring, PostgreSQL | Jway |
-| enu-mediation | transformation et routage des messages | Java, Apache Camel | État de Genève |
+| enu-mediation | transformation et routage des messages | Java, Spring Boot | État de Genève |
 | RabbitMQ | middleware de messagerie | RabbitMQ | VMWare Tanzu |
 
 Le diagramme ci-dessus est en réalité simplifié : si le SI client est principalement producteur de messages et
@@ -122,8 +122,8 @@ Le découplage est d'autre part technique. Il permet d'exécuter les opérations
 ainsi un tampon, présumé plus robuste que n'importe quel autre composant de la chaîne, et permet que n'importe
 quel composant - par exemple, enu-backend ou un système métier - demeure un temps inaccessible.
 
-Techniquement, enu-mediation est une application Spring Boot exploitant intensivement
-[Apache Camel](https://camel.apache.org). Elle reçoit ses messages de RabbitMQ, les transforme et les route
+Techniquement, enu-mediation est une application Spring Boot.
+Elle reçoit ses messages de RabbitMQ, les transforme et les route
 vers un ou plusieurs services REST de enu-backend. Un message contient par exemple les données d'une nouvelle
 démarche d'un usager.
 Le flux se fait parfois dans le sens inverse, par exemple quand sur l'IHM enu-frontend l'usager ... ; le système
