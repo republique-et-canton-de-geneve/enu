@@ -56,9 +56,7 @@ Une autre fonctionnalité est
 
 ![](./images/enu-profil.jpg)
 
-Dans celle-ci, l'usager peut notamment préciser ses préférences lors de ses interactions avec l'administration :
-choix des notifications (par courriel ou par SMS), choix des événements justifiant une notification
-(nouvelle tâche à réaliser, confirmation du dépôt d'une démarche, etc.).
+Dans celle-ci, l'usager peut préciser ses préférences de notifications lors de ses interactions avec l'administration : par courriel ou par SMS.
 
 La fonctionnalité
 &#x00AB;&#x00A0;Ma situation&#x00A0;&#x00BB;,
@@ -109,6 +107,9 @@ Ce composant contrôle une base de données PostgreSQL, dont le schéma de donn�
 FormServices.
 
 Ce composant est écrit en Java et est basé sur JPA, Spring et JAX-RS. 
+
+Une refont de ce module est en cours pour le rendre modulaire. Le framework Jway sera supprimé et la base de donnée PostgreSQL
+sera remplacée par MongoDB.
 
 ### c) enu-mediation
 
@@ -181,6 +182,4 @@ de formulaires en ligne proposée par la société Jway, et entièrement dévelo
 Les composants enu-frontend, enu-mediation et enu-backend ont été développés par l'État de Genève - le composant
 enu-backend en étroite collaboration avec Jway.
 
-La maintenance de l'Espace numérique de l'usager (enu-fontend et enu-backend) sera assurée par Jway.
-La maintenance de l'Espace numérique de l'usager tel qu'il est déployé à Genève (enu-mediation, queues RabbitMQ, contrats des
-messages) sera assurée par l'État de Genève.
+La maintenance de l'Espace numérique de l'usager tel qu'il est déployé à Genève est assurée par l'État de Genève.
